@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santiago Castro Peñaranda | Software Developer & Game Creator</title>
+  <meta name="description" content="Portafolio profesional de Santiago Castro Peñaranda: Desarrollo de Software, Game Dev y Narrativas Digitales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <canvas id="particlesCanvas" aria-hidden="true"></canvas>
+  <div class="animated-bg" aria-hidden="true"></div>
+
+  <header class="site-header reveal">
+    <div class="container nav-container">
+      <a class="logo" href="#inicio">&lt;Santiago.Dev /&gt;</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        ☰
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero reveal">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">* DETERMINATION</p>
+        <h1>Santiago Castro Peñaranda</h1>
+        <h2>
+          <span id="typewriter"></span>
+          <span class="caret" aria-hidden="true">_</span>
+        </h2>
+        <p>
+          Estudiante de desarrollo de software, escritor e ilustrador digital. Apasionado por construir sistemas escalables, arquitectura de software, backend robusto y videojuegos independientes con narrativa profunda.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#proyectos" id="btnVerMas">Explorar Proyectos</a>
+          <a class="btn btn-secondary magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section reveal">
+      <div class="container about-grid">
+        <div class="about-photo tilt-card">
+          <img class="profile-photo" src="img/IMG_0062.png" alt="Foto o Ilustración de Santiago Castro Peñaranda" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <h3>Sobre mí</h3>
+          <p>
+            Soy un desarrollador de software y creativo radicado en Cúcuta, Colombia. Mi enfoque combina la lógica de programación (Python, JavaScript, SQL y Versionamiento con Git) con el arte visual (Krita) y la narrativa escrita para la creación de experiencias digitales interactivas.
+          </p>
+          <p>
+            Tengo experiencia práctica diseñando bases de datos relacionales, construyendo arquitecturas de software, implementando lógica backend y coordinando procesos organizacionales de gestión de talento y reclutamiento.
+          </p>
+          <ul class="key-data">
+            <li><strong>Ubicación:</strong> Cúcuta, Norte de Santander, Colombia</li>
+            <li><strong>Enfoque:</strong> Backend, Base de Datos, Game Dev y Lógica de Software</li>
+            <li><strong>Herramientas Creativas:</strong> Ilustración Digital (Krita), Guionismo y Diseño Técnico</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section section-alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <h3>Proyectos Destacados</h3>
+          <p>Modelado de datos, lógica algorítmica y aplicaciones orientadas a producto.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>PixelVault Digital Store</h4>
+                <p>Diseño de modelo relacional, diagrama Entidad-Relación y scripts DDL en PostgreSQL para tienda digital.</p>
+                <p class="tech">Tech: SQL, PostgreSQL, Draw.io, Database Design</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/pokedomin.png" alt="Preview de PixelVault Digital Store" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>Simulación Turing & Neurona McCulloch-Pitts</h4>
+                <p>Documento de arquitectura de software y simulación lógica de prueba de Turing con modelos UML y persistencia.</p>
+                <p class="tech">Tech: Python, UML Class Diagrams, Logica de IA</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/n8n.png" alt="Preview de Simulación Turing" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver Documentación</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>Gestor de Biblioteca Virtual</h4>
+                <p>Aplicación de consola en Python con persistencia en JSON, módulo de auditoría y verificación de consistencia.</p>
+                <p class="tech">Tech: Python, JSON Persistence, File Handling</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/pokedomin.png" alt="Preview del Gestor de Biblioteca" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>Modulo PhotoCampus</h4>
+                <p>Módulo de gestión de servicios fotográficos con flujo Git feature-branch y persistencia de datos.</p>
+                <p class="tech">Tech: Python, Git Flow, JSON</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/n8n.png" alt="Preview de PhotoCampus" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>E-Commerce Cart & Dashboard Fundación Patitas</h4>
+                <p>Aplicación web interactiva de carrito de compras y maquetación de dashboard visual de impacto social.</p>
+                <p class="tech">Tech: JavaScript, HTML5, CSS3 Grid/Flexbox</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/pokedomin.png" alt="Preview de Carrito e Impacto" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-flip reveal">
+            <div class="project-flip-inner">
+              <div class="project-face project-front">
+                <h4>Servidor Custom Minecraft Game Server</h4>
+                <p>Configuración y despliegue de servidor dedicado Forge 1.20.1 con +70 mods enfocado en soulslike y survival.</p>
+                <p class="tech">Tech: Linux/Server Config, Networking, Modding</p>
+              </div>
+              <div class="project-face project-back">
+                <img class="project-preview" src="photos/n8n.png" alt="Preview de Minecraft Dedicated Server" loading="lazy" />
+                <a class="btn btn-outline magnetic" href="#contacto">Saber más</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h3>Habilidades & Tecnologías</h3>
+          <p>Stack de desarrollo backend, frontend, herramientas de diseño y bases de datos.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item tilt-card">🐍 Python</div>
+          <div class="skill-item tilt-card">⚡ JavaScript</div>
+          <div class="skill-item tilt-card">🌐 HTML5 / CSS3</div>
+          <div class="skill-item tilt-card">🗄️ SQL / PostgreSQL</div>
+          <div class="skill-item tilt-card">🌿 Git & GitHub</div>
+          <div class="skill-item tilt-card">📐 UML & DB Architecture</div>
+          <div class="skill-item tilt-card">🎨 Ilustración Digital (Krita)</div>
+          <div class="skill-item tilt-card">🎮 Game Design & Narrative</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-alt reveal">
+      <div class="container contact-wrap">
+        <div>
+          <h3>Contacto</h3>
+          <p>¿Tienes una oportunidad laboral, proyecto de desarrollo o colaboración de software? Hablemos.</p>
+          <div class="contact-links">
+            <a class="magnetic" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="magnetic" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="magnetic" href="mailto:santiago@ejemplo.com">Correo Electrónico</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form tilt-card" novalidate>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+
+          <button class="btn btn-primary magnetic" type="submit">Enviar Mensaje</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <div class="container">
+      <p>© 2026 Santiago Castro Peñaranda | Cúcuta, Colombia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
